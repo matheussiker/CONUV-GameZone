@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -12,11 +13,11 @@
 <body>
     <header>
         <h1 class="texto-logo">Game<span>Zone</span></h1>
-        <nav>  
+        <nav>
             <ul class="lista-links">
-                <li><a  class="link-paginas ativado" href="index.html">Home</a></li>
-                <li><a  class="link-paginas" href="pages/jogos.html">Jogos</a></li>
-                <li><a  class="link-paginas" href="pages/favoritos.html">Favoritos</a></li>
+                <li><a class="link-paginas ativado" href="index.html">Home</a></li>
+                <li><a class="link-paginas" href="pages/jogos.html">Jogos</a></li>
+                <li><a class="link-paginas" href="pages/favoritos.html">Favoritos</a></li>
             </ul>
         </nav>
     </header>
@@ -27,43 +28,65 @@
                 <h2>DESCUBRA SEU PRÓXIMO JOGO</h2>
                 <p>Explore jogos, encontre seus favoritos e descubra novas experiências. Encontre jogos para sua próxima aventura.</p>
 
-                <button class="btn"> Explorar Jogos</button>
+                <button class="btn">Explorar Jogos</button>
             </div>
         </section>
 
         <section class="destaques">
-            <h1>JOGOS EM DESTAQUES</h1>
+            <h2 class="titulo-section">JOGOS EM DESTAQUES</h2>
 
             <article class="cards">
-                <div class="card">
-                    <img src="https://viciados.net/wp-content/uploads/2025/11/GTA-VI-Grand-Theft-Auto-6-Rockstar-Games-Jason-Lucia-Wallpaper-2026-797x448.webp" alt="">
+                <div class="card" data-jogo="gta-vi">
+                    <img src="https://viciados.net/wp-content/uploads/2025/11/GTA-VI-Grand-Theft-Auto-6-Rockstar-Games-Jason-Lucia-Wallpaper-2026-797x448.webp" alt="GTA VI">
                     <h2>GTA VI</h2>
-                    <p></p>
+                    <p>Explore Vice City com Jason e Lucia em uma aventura de mundo aberto repleta de crimes, ação e perigos.</p>
+                    <button class="btn-favorito" type="button" data-jogo="gta-vi">♡ Favoritar</button>
                 </div>
 
-                 <div class="card">
-                    <img src="https://i.pinimg.com/736x/05/c6/fc/05c6fcea32c3cf00f5d2c19be14c3beb.jpg" alt="">
+                <div class="card" data-jogo="valorant">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZmQwMjQ2ZTUtZmM5MC00MTdkLWIxYzgtODU1NzQ4Zjg4NmMxXkEyXkFqcGc@._V1_.jpg" alt="Valorant">
                     <h2>VALORANT</h2>
-                    <p></p>
+                    <p>Forme sua equipe, escolha um agente com habilidades únicas e dispute partidas táticas de tiro.</p>
+                    <button class="btn-favorito" type="button" data-jogo="valorant">♡ Favoritar</button>
                 </div>
 
-                <div class="card">
-                    <img src="https://m.media-amazon.com/images/M/MV5BOWJlODRkMDMtYjAxNy00NDEzLTk1MTctZmUyMjc2OTM0N2EwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="">
-                    <h2>FORTINITE</h2>
-                    <p></p>
+                <div class="card" data-jogo="fortnite">
+                    <img src="https://m.media-amazon.com/images/M/MV5BOWJlODRkMDMtYjAxNy00NDEzLTk1MTctZmUyMjc2OTM0N2EwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Fortnite">
+                    <h2>FORTNITE</h2>
+                    <p>Caia na ilha, encontre equipamentos, enfrente outros jogadores e lute para ser o último sobrevivente.</p>
+                    <button class="btn-favorito" type="button" data-jogo="fortnite">♡ Favoritar</button>
                 </div>
 
-                <div class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tabDHJ6jqEUUNy_Fo7VwoREbiiMvBc53QCFkuirrHg&s=10" alt="">
-                    <h2>FORZA HORIZON</h2>
-                    <p></p>
+                <div class="card" data-jogo="forza-horizon-6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tabDHJ6jqEUUNy_Fo7VwoREbiiMvBc53QCFkuirrHg&s=10" alt="Forza Horizon 6">
+                    <h2>FORZA HORIZON 6</h2>
+                    <p>Explore cenários impressionantes, dirija carros incríveis e participe de corridas e desafios automobilísticos.</p>
+                    <button class="btn-favorito" type="button" data-jogo="forza-horizon-6">♡ Favoritar</button>
                 </div>
             </article>
         </section>
-        
+
+        <section class="jogo-Mais-Aguardado">
+            <h2 class="titulo-section">O MAIS AGUARDADO</h2>
+
+            <div class="painel-jogo">
+                <div class="painel-img">
+                    <img src="https://www.rockstargames.com/VI/_next/static/media/Official_Cover_Art_landscape.12.uu2irr.2_a.jpg?akim=1&imdensity=1&imwidth=640" alt="Grand Theft Auto VI">
+                </div>
+
+                <div class="panel-conteudo">
+                    <span class="categoria-jogo">LANÇAMENTO MAIS AGUARDADO</span>
+                    <h2>Grand Theft Auto VI</h2>
+
+                    <p class="data-lancamento">19/11/2026</p>
+
+                    <p>
+                        Grand Theft Auto VI é o próximo grande capítulo da famosa franquia da Rockstar Games. Ambientado no estado fictício de Leonida, inspirado na Flórida, o jogo traz de volta a icônica Vice City em um mundo aberto repleto de ação, crimes e oportunidades. A história acompanha Jason Duval e Lucia Caminos, um casal que se envolve em uma perigosa conspiração criminosa.
+                    </p>
+                    <button class="btn">♡ Favoritar</button>
+                </div>
+            </div>
+        </section>
     </main>
-   
-
-
 </body>
-</html
+</html>

@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;
@@ -27,6 +28,7 @@ header{
     gap: 100px;
     list-style: none;
 }
+
 .link-paginas{
     text-decoration: none;
     color: #828181;
@@ -38,17 +40,19 @@ header{
 
 .link-paginas:hover{
     color: #ffffff;
-    background-image:  linear-gradient(to top,#65636584, #18021100);
+    background-image: linear-gradient(to top,#65636584, #18021100);
 }
+
 .ativado{
     color: #ffffff;
-    background-image:  linear-gradient(to top,#ff00c884, #02021800);
+    background-image: linear-gradient(to top,#ff00c884, #02021800);
 }
 
 .ativado:hover{
     color: #ffffff;
-    background-image:  linear-gradient(to top,#ff00c884, #02021800);
+    background-image: linear-gradient(to top,#ff00c884, #02021800);
 }
+
 .banner-explorar{
     position: relative;
     height: 450px;
@@ -77,27 +81,31 @@ header{
 }
 
 .conteudo-explorar h2{
-  font-size: 2em;
+    font-size: 2em;
 }
 
 .conteudo-explorar p{
-  max-width: 500px;
-  text-align: justify;
+    max-width: 500px;
+    text-align: justify;
 }
 
 .conteudo-explorar button{
+    margin-top: 150px;
+}
+
+.btn{
     background-color: #a42d8a;
     border: none;
     border-radius: 5px;
     height: 40px;
     color: #f1f1f1;
     padding: 5px 20px;
-    margin-top: 150px;
     transition: all 0.5s;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.conteudo-explorar button:hover{
+.btn:hover{
     color: rgb(255, 255, 255);
     background-color: #dbdbdb00;
     border: solid 3px;
@@ -110,14 +118,15 @@ header{
     margin: 0 auto;
 }
 
-.destaques h1{
+.titulo-section{
     text-align: center;
     margin-top: 100px;
+    font-size: 2em;
 }
 
 .cards{
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;
     margin-top: 50px;
 }
 
@@ -126,32 +135,177 @@ header{
     border-radius: 15px;
     height: 400px;
     position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover{
+    box-shadow: 8px 8px 30px rgba(255, 1, 225, 0.25);
+    transform: translateY(-5px);
 }
 
 .card::before{
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0));
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.05) 35%,
+        rgba(0, 0, 0, 0.3) 55%,
+        rgba(0, 0, 0, 0.95)
+    );
     z-index: 1;
+    pointer-events: none;
 }
 
-.card img {
+.card img{
     width: 100%;
     height: 400px;
     object-fit: cover;
     object-position: center;
     border-radius: 15px;
-    transition: filter 0.3s ease; 
-    filter: blur(0px);
-    z-index: 0;
-    
-}
-.card:hover img{
-    filter: blur(5px);
+    transition: all 0.4s ease;
+    display: block;
 }
 
+.card:hover img{
+    filter: grayscale(100%) brightness(0.65);
+    transform: scale(1.05);
+}
 
 .card h2{
-    
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    right: 20px;
+    margin: 0;
+    z-index: 2;
+    font-size: 1.4em;
+    text-shadow: 2px 2px 8px #000000;
+    transition: color 0.3s ease;
+}
+
+.card p{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 65px;
+    margin: 0;
+    z-index: 2;
+    color: #e0e0e0;
+    font-size: 0.9em;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.4s ease;
+}
+
+.card:hover p{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-favorito{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 15px;
+    z-index: 3;
+    width: calc(100% - 40px);
+    height: 38px;
+    border: 1px solid #a42d8a;
+    border-radius: 6px;
+    background-color: #a42d8a;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}       
+
+.card:hover .btn-favorito{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-favorito:hover{
+    background-color: #020218;
+    border-color: #d94fbd;
+    box-shadow: 0 0 12px #a42d8a80;
+}
+
+.jogo-Mais-Aguardado {
+    width: 60%;
+    margin: 150px auto;
+}
+
+.painel-jogo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 350px;
+    margin: 70px 0 0 60px;
+    padding: 35px 35px 35px 260px;
+    border: 1px solid #a42d8a;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #11112b, #080816);
+    box-shadow: 0 0 25px #a42d8a20;
+}
+
+.painel-img {
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 380px;
+    z-index: 2;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 50px rgba(255, 1, 225, 0.15);
+}
+
+.painel-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    transform: scale(1.05);
+}
+
+.panel-conteudo {
+    flex: 1;
+    min-width: 0;
+}
+
+.categoria-jogo {
+    display: block;
+    color: #a42d8a;
+    font-size: 0.75em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.panel-conteudo h2 {
+    margin: 0 0 10px;
+    font-size: 1.8em;
+}
+
+.panel-conteudo .data-lancamento {
+    color: #d94fbd;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.panel-conteudo p {
+    max-width: 550px;
+    color: #c5c5d2;
+    line-height: 1.8;
+    text-align: justify;
 }
