@@ -1,0 +1,178 @@
+
+
+.pagina-favoritos {
+    min-height: 60vh;
+    padding-bottom: 80px;
+}
+
+
+.introducao-favoritos {
+    width: 90%;
+    margin: 80px auto 50px;
+    text-align: center;
+}
+
+
+.legenda-favoritos {
+    color: #72b5ab;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+
+.introducao-favoritos h2 {
+    margin: 15px 0;
+    font-size: 2.2em;
+}
+
+
+.introducao-favoritos h2 span {
+    color: #72c7bd;
+}
+
+
+.introducao-favoritos p {
+    color: #aeb7ba;
+    line-height: 1.7;
+}
+
+
+.secao-favoritos {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.grade-favoritos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+
+.favorito-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #303a3c;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #202529, #171a1d);
+    transition: transform 0.35s ease, border-color 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+
+.favorito-card:hover {
+    transform: translateY(-6px);
+    border-color: #527a74;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3),
+                0 0 18px rgba(114, 199, 189, 0.08);
+}
+
+
+.favorito-card img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+
+.favorito-card:hover img {
+    transform: scale(1.04);
+}
+
+
+.conteudo-favorito {
+    padding: 18px;
+}
+
+
+.genero-favorito {
+    color: #72c7bd;
+    font-size: 0.75em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.conteudo-favorito h3 {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+
+.conteudo-favorito p {
+    min-height: 90px;
+    margin: 0 0 18px;
+    color: #bdc5c8;
+    font-size: 0.85em;
+    line-height: 1.7;
+}
+
+
+.favorito-card .btn-favorito {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 40px;
+    opacity: 1;
+    transform: none;
+    border: 1px solid #527a74;
+    border-radius: 6px;
+    background-color: #1b2827;
+    color: #a6ddd5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.favorito-card .btn-favorito:hover {
+    background-color: #263b38;
+    border-color: #91c9c1;
+    box-shadow: 0 0 14px rgba(114, 199, 189, 0.12);
+}
+
+
+.mensagem-vazia {
+    padding: 60px 20px;
+    text-align: center;
+    border: 1px dashed #354744;
+    border-radius: 12px;
+    background-color: #171a1d;
+}
+
+
+.mensagem-vazia[hidden] {
+    display: none;
+}
+
+
+.icone-vazio {
+    color: #72c7bd;
+    font-size: 3.5em;
+}
+
+
+.mensagem-vazia h3 {
+    margin: 10px 0;
+    font-size: 1.4em;
+}
+
+
+.mensagem-vazia p {
+    margin: 0 auto 25px;
+    color: #aeb7ba;
+    line-height: 1.7;
+}
+
+
+.link-explorar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}

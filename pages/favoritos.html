@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Favoritos -GameZone</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/favoritos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1 class="texto-logo">Game<span>Zone</span></h1>
+
+        <nav>
+            <ul class="lista-links">
+                <li><a class="link-paginas" href="../index.html">Home</a></li>
+                <li><a class="link-paginas" href="jogos.html">Jogos</a></li>
+                <li><a class="link-paginas ativado" href="favoritos.html">Favoritos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pagina-favoritos">
+        <section class="introducao-favoritos">
+            <span class="legenda-favoritos">SUA COLEÇÃO</span>
+
+            <h2>MEUS FAVORITOS</h2>
+
+            <p>Todos os jogos que você escolheu</p>
+        </section>
+
+        <section class="secao-favoritos">
+            <div id="lista-favoritos" class="grade-favoritos"></div>
+
+            <div id="mensagem-vazia" class="mensagem-vazia" hidden>
+                <h3>Sua coleção ainda está vazia</h3>
+
+                <p>Explore nosso catálogo e adicione os jogos que mais gostar</p>
+
+                <a class="btn link-explorar" href="jogos.html">Explorar jogos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-conteudo">
+            <div class="footer-logo">
+                <h2>Game<span>Zone</span></h2>
+            </div>
+
+            <div class="footer-links">
+                <h3>NAVEGAÇÃO</h3>
+
+                <a href="../index.html">Home</a>
+                <a href="jogos.html">Jogos</a>
+                <a href="favoritos.html">Favoritos</a>
+            </div>
+
+            <div class="footer-sobre">
+                <h3>SOBRE O GAMEZONE</h3>
+
+                <p>Descubra jogos, explore novidades e encontre sua próxima aventura no universo gamer.</p>
+            </div>
+        </div>
+
+        <div class="footer-final">
+            <p>© 2026 GameZone. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/favoritos.js"></script>
+</body>
+</html>

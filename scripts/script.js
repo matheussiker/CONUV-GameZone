@@ -16,9 +16,9 @@ function atualizarBotoesFavoritos() {
         const favoritado = favoritos.includes(jogo);
 
         if (favoritado) {
-            botao.textContent = "♥ Favoritado";
+            botao.textContent = "Favoritado";
         } else {
-            botao.textContent = "♡ Favoritar";
+            botao.textContent = "   Favoritar";
         }
         botao.classList.toggle("favoritado", favoritado);
     });
