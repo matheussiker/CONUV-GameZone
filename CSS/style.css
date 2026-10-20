@@ -324,13 +324,11 @@ header {
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    transition: color 0.3s ease;
 }
 
 .panel-conteudo h2 {
     margin: 0 0 10px;
     font-size: 1.8em;
-    transition: color 0.3s ease;
 }
 
 .panel-conteudo .data-lancamento {

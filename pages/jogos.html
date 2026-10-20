@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jogos | GameZone</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/jogos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1 class="texto-logo">Game<span>Zone</span></h1>
+
+        <nav>
+            <ul class="lista-links">
+                <li><a class="link-paginas" href="../index.html">Home</a></li>
+                <li><a class="link-paginas ativado" href="jogos.html">Jogos</a></li>
+                <li><a class="link-paginas" href="favoritos.html">Favoritos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pagina-jogos">
+
+        <section class="introducao-jogos">
+            <span class="legenda-jogos">EXPLORE O CATÁLOGO</span>
+
+            <h2>ENCONTRE SEU PRÓXIMO JOGO</h2>
+
+            <p>
+                Explore diferentes gêneros, descubra novos jogos
+                e monte sua própria coleção de favoritos.
+            </p>
+        </section>
+
+        <section class="catalogo-jogos">
+
+            <div class="barra-pesquisa">
+                <input
+                    type="search"
+                    id="pesquisa-jogo"
+                    placeholder="Pesquisar jogo..."
+                    aria-label="Pesquisar jogo pelo nome"
+                >
+            </div>
+
+            <div class="filtros-genero">
+                <button class="filtro ativo" type="button" data-genero="todos">Todos</button>
+                <button class="filtro" type="button" data-genero="acao">Ação</button>
+                <button class="filtro" type="button" data-genero="tiro">Tiro</button>
+                <button class="filtro" type="button" data-genero="battle-royale">Battle Royale</button>
+                <button class="filtro" type="button" data-genero="corrida">Corrida</button>
+            </div>
+
+            <p id="contador-jogos" class="contador-jogos"></p>
+
+            <div class="grade-jogos">
+
+                <article class="card card-catalogo" data-genero="acao">
+                    <img
+                        src="https://viciados.net/wp-content/uploads/2025/11/GTA-VI-Grand-Theft-Auto-6-Rockstar-Games-Jason-Lucia-Wallpaper-2026-797x448.webp"
+                        alt="GTA VI"
+                        loading="lazy"
+                    >
+
+                    <div class="informacoes-jogo">
+                        <span class="genero-jogo">Ação e mundo aberto</span>
+                        <h2>GTA VI</h2>
+
+                        <p>
+                            Explore Vice City com Jason e Lucia em um mundo
+                            aberto repleto de ação e aventuras.
+                        </p>
+
+                        <button class="btn-favorito" type="button" data-jogo="gta-vi">
+                            Favoritar
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card card-catalogo" data-genero="tiro">
+                    <img
+                        src="https://m.media-amazon.com/images/M/MV5BZmQwMjQ2ZTUtZmM5MC00MTdkLWIxYzgtODU1NzQ4Zjg4NmMxXkEyXkFqcGc@._V1_.jpg"
+                        alt="VALORANT"
+                        loading="lazy"
+                    >
+
+                    <div class="informacoes-jogo">
+                        <span class="genero-jogo">Tiro tático</span>
+                        <h2>VALORANT</h2>
+
+                        <p>
+                            Escolha seu agente, use habilidades especiais
+                            e vença partidas estratégicas.
+                        </p>
+
+                        <button class="btn-favorito" type="button" data-jogo="valorant">
+                            Favoritar
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card card-catalogo" data-genero="battle-royale">
+                    <img
+                        src="https://m.media-amazon.com/images/M/MV5BOWJlODRkMDMtYjAxNy00NDEzLTkxNTctZmUyMjc2OTM0N2EwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                        alt="Fortnite"
+                        loading="lazy"
+                    >
+
+                    <div class="informacoes-jogo">
+                        <span class="genero-jogo">Battle Royale</span>
+                        <h2>FORTNITE</h2>
+
+                        <p>
+                            Encontre equipamentos, enfrente adversários
+                            e lute para ser o último sobrevivente.
+                        </p>
+
+                        <button class="btn-favorito" type="button" data-jogo="fortnite">
+                            Favoritar
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card card-catalogo" data-genero="corrida">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tabDHJ6jqEUUNy_Fo7VwoREbiiMvBc53QCFkuirrHg&s=10"
+                        alt="Forza Horizon 6"
+                        loading="lazy"
+                    >
+
+                    <div class="informacoes-jogo">
+                        <span class="genero-jogo">Corrida</span>
+                        <h2>FORZA HORIZON 6</h2>
+
+                        <p>
+                            Dirija carros incríveis e participe de corridas
+                            em cenários impressionantes.
+                        </p>
+
+                        <button class="btn-favorito" type="button" data-jogo="forza-horizon-6">
+                            Favoritar
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="mensagem-sem-jogos" class="mensagem-sem-jogos" hidden>
+                Nenhum jogo encontrado. Tente outra pesquisa ou categoria.
+            </p>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-conteudo">
+
+            <div class="footer-logo">
+                <h2>Game<span>Zone</span></h2>
+            </div>
+
+            <div class="footer-links">
+                <h3>NAVEGAÇÃO</h3>
+                <a href="../index.html">Home</a>
+                <a href="jogos.html">Jogos</a>
+                <a href="favoritos.html">Favoritos</a>
+            </div>
+
+            <div class="footer-sobre">
+                <h3>SOBRE O GAMEZONE</h3>
+                <p>
+                    Descubra jogos, explore novidades e encontre
+                    sua próxima aventura no universo gamer.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-final">
+            <p>© 2026 GameZone. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/jogos.js"></script>
+</body>
+</html>

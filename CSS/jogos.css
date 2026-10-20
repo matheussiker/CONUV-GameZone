@@ -1,0 +1,190 @@
+.pagina-jogos {
+    min-height: 60vh;
+    padding-bottom: 80px;
+}
+
+.introducao-jogos {
+    width: 90%;
+    margin: 80px auto 50px;
+    text-align: center;
+}
+
+.legenda-jogos {
+    color: #72b5ab;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.introducao-jogos h2 {
+    margin: 15px 0;
+    font-size: 2.2em;
+}
+
+.introducao-jogos p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #aeb7ba;
+    line-height: 1.8;
+}
+
+.catalogo-jogos {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.barra-pesquisa {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.barra-pesquisa input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 18px;
+    border: 1px solid #354744;
+    border-radius: 8px;
+    outline: none;
+    background-color: #191c20;
+    color: #e8eaed;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.barra-pesquisa input:focus {
+    border-color: #72c7bd;
+    box-shadow: 0 0 12px rgba(114, 199, 189, 0.1);
+}
+
+.barra-pesquisa input::placeholder {
+    color: #81898d;
+}
+
+.filtros-genero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.filtro {
+    padding: 10px 22px;
+    border: 1px solid #354744;
+    border-radius: 7px;
+    background-color: #191c20;
+    color: #c2c8ca;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filtro:hover,
+.filtro.ativo {
+    border-color: #72c7bd;
+    background-color: #223331;
+    color: #a6ddd5;
+    box-shadow: 0 0 14px rgba(114, 199, 189, 0.08);
+}
+
+.contador-jogos {
+    margin: 0 0 20px;
+    color: #8f9b9e;
+    font-size: 0.85em;
+}
+
+.grade-jogos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.card-catalogo {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    align-self: start;
+    background-color: #1a1d20;
+}
+
+.card-catalogo::before {
+    display: none;
+}
+
+.card-catalogo img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.card-catalogo:hover img {
+    filter: brightness(0.9);
+    transform: scale(1.04);
+}
+
+.card-catalogo .informacoes-jogo {
+    position: relative;
+    z-index: 2;
+    padding: 18px;
+}
+
+.genero-jogo {
+    color: #72c7bd;
+    font-size: 0.75em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.card-catalogo .informacoes-jogo h2 {
+    position: static;
+    margin: 8px 0;
+    font-size: 1.1em;
+    text-shadow: none;
+}
+
+.card-catalogo:hover .informacoes-jogo h2 {
+    color: #b2e6df;
+    transform: none;
+}
+
+.card-catalogo .informacoes-jogo p {
+    position: static;
+    min-height: 100px;
+    margin: 0;
+    color: #bdc5c8;
+    font-size: 0.85em;
+    line-height: 1.7;
+    opacity: 1;
+    transform: none;
+}
+
+.card-catalogo .btn-favorito {
+    position: static;
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    opacity: 1;
+    transform: none;
+}
+
+.card-catalogo .btn-favorito.favoritado {
+    background-color: #1b2827;
+    border-color: #72a9a2;
+    color: #a6ddd5;
+}
+
+.card-catalogo[hidden] {
+    display: none;
+}
+
+.mensagem-sem-jogos {
+    padding: 35px 15px;
+    color: #aeb7ba;
+    text-align: center;
+}
+
+.mensagem-sem-jogos[hidden] {
+    display: none;
+}
