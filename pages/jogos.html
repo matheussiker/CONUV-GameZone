@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header>
         <h1 class="texto-logo">Game<span>Zone</span></h1>
 
@@ -28,7 +27,6 @@
     </header>
 
     <main class="pagina-jogos">
-
         <section class="introducao-jogos">
             <span class="legenda-jogos">EXPLORE O CATÁLOGO</span>
 
@@ -41,14 +39,8 @@
         </section>
 
         <section class="catalogo-jogos">
-
             <div class="barra-pesquisa">
-                <input
-                    type="search"
-                    id="pesquisa-jogo"
-                    placeholder="Pesquisar jogo..."
-                    aria-label="Pesquisar jogo pelo nome"
-                >
+                <input type="search" id="pesquisa-jogo" placeholder="Pesquisar jogo..." aria-label="Pesquisar jogo pelo nome">
             </div>
 
             <div class="filtros-genero">
@@ -57,15 +49,15 @@
                 <button class="filtro" type="button" data-genero="tiro">Tiro</button>
                 <button class="filtro" type="button" data-genero="battle-royale">Battle Royale</button>
                 <button class="filtro" type="button" data-genero="corrida">Corrida</button>
+                <button class="filtro" type="button" data-genero="esportes">Esportes</button>
             </div>
 
             <p id="contador-jogos" class="contador-jogos"></p>
 
             <div class="grade-jogos">
-
                 <article class="card card-catalogo" data-genero="acao">
                     <img
-                        src="https://viciados.net/wp-content/uploads/2025/11/GTA-VI-Grand-Theft-Auto-6-Rockstar-Games-Jason-Lucia-Wallpaper-2026-797x448.webp"
+                        src="https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/gta6.jpg"
                         alt="GTA VI"
                         loading="lazy"
                     >
@@ -87,7 +79,7 @@
 
                 <article class="card card-catalogo" data-genero="tiro">
                     <img
-                        src="https://m.media-amazon.com/images/M/MV5BZmQwMjQ2ZTUtZmM5MC00MTdkLWIxYzgtODU1NzQ4Zjg4NmMxXkEyXkFqcGc@._V1_.jpg"
+                        src="https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/valorant.jpg"
                         alt="VALORANT"
                         loading="lazy"
                     >
@@ -109,7 +101,7 @@
 
                 <article class="card card-catalogo" data-genero="battle-royale">
                     <img
-                        src="https://m.media-amazon.com/images/M/MV5BOWJlODRkMDMtYjAxNy00NDEzLTkxNTctZmUyMjc2OTM0N2EwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                        src="https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/fortinite.jpg"
                         alt="Fortnite"
                         loading="lazy"
                     >
@@ -131,7 +123,7 @@
 
                 <article class="card card-catalogo" data-genero="corrida">
                     <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tabDHJ6jqEUUNy_Fo7VwoREbiiMvBc53QCFkuirrHg&s=10"
+                        src="https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/forzaHorizon6.jpg"
                         alt="Forza Horizon 6"
                         loading="lazy"
                     >
@@ -146,6 +138,120 @@
                         </p>
 
                         <button class="btn-favorito" type="button" data-jogo="forza-horizon-6">
+                            Favoritar
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card card-catalogo" data-genero="acao">
+                    <img src="https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/minecraft.jfif"
+                        alt="Minecraft" loading="lazy">
+
+                    <div class="informacoes-jogo">
+                        <span class="genero-jogo">Aventura e construção</span>
+                        <h2>MINECRAFT</h2>
+                        <p>Explore mundos, construa casas e sobreviva usando sua criatividade.</p>
+                        <button class="btn-favorito" type="button" data-jogo="minecraft">
+                            Favoritar
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card card-catalogo" data-genero="acao">
+                    <img src="https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/redDeadRedemption7.jfif"
+                        alt="Red Dead Redemption 2" loading="lazy">
+
+                    <div class="informacoes-jogo">
+                        <span class="genero-jogo">Ação e mundo aberto</span>
+                        <h2>RED DEAD REDEMPTION 2</h2>
+                        <p>Viva uma aventura no Velho Oeste com Arthur Morgan e sua gangue.</p>
+                        <button class="btn-favorito" type="button" data-jogo="red-dead-2">
+                            Favoritar
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card card-catalogo" data-genero="acao">
+                    <img src="https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/cyberpunk2077.jfif"
+                        alt="Cyberpunk 2077" loading="lazy">
+
+                    <div class="informacoes-jogo">
+                        <span class="genero-jogo">RPG e ação</span>
+                        <h2>CYBERPUNK 2077</h2>
+                        <p>Explore Night City em uma aventura futurista cheia de escolhas.</p>
+                        <button class="btn-favorito" type="button" data-jogo="cyberpunk-2077">
+                            Favoritar
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card card-catalogo" data-genero="acao">
+                    <img src="https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/ELDENRING.jfif"
+                        alt="Elden Ring" loading="lazy">
+
+                    <div class="informacoes-jogo">
+                        <span class="genero-jogo">RPG e aventura</span>
+                        <h2>ELDEN RING</h2>
+                        <p>Explore um mundo de fantasia e enfrente inimigos desafiadores.</p>
+                        <button class="btn-favorito" type="button" data-jogo="elden-ring">
+                            Favoritar
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card card-catalogo" data-genero="esportes">
+                    <img src="https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/EA+SPORTSFC.jfif"
+                        alt="EA Sports FC" loading="lazy">
+
+                    <div class="informacoes-jogo">
+                        <span class="genero-jogo">Esportes e futebol</span>
+                        <h2>EA SPORTS FC</h2>
+                        <p>Monte seu time e dispute partidas de futebol com seus jogadores favoritos.</p>
+                        <button class="btn-favorito" type="button" data-jogo="ea-sports-fc">
+                            Favoritar
+                        </button>
+                    </div>
+                </article>
+
+                <article class="card card-catalogo" data-genero="tiro">
+                    <img src="https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/callofdutyblackops7.jfif"
+                        alt="Call of Duty" loading="lazy">
+
+                    <div class="informacoes-jogo">
+                        <span class="genero-jogo">Tiro e ação</span>
+                        <h2>CALL OF DUTY</h2>
+                        <p>Participe de combates intensos em modos individuais e multiplayer.</p>
+                        <button class="btn-favorito" type="button" data-jogo="call-of-duty">
+                            Favoritar
+                        </button>
+                    </div>
+                </article>
+
+
+                <article class="card card-catalogo" data-genero="corrida">
+                    <img src="https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/ROCKETLEAGUE.jfif"
+                        alt="Rocket League" loading="lazy">
+
+                    <div class="informacoes-jogo">
+                        <span class="genero-jogo">Carros e futebol</span>
+                        <h2>ROCKET LEAGUE</h2>
+                        <p>Controle carros turbinados e marque gols em partidas eletrizantes.</p>
+                        <button class="btn-favorito" type="button" data-jogo="rocket-league">
+                            Favoritar
+                        </button>
+                    </div>
+                </article>
+
+
+                <article class="card card-catalogo" data-genero="battle-royale">
+                    <img src="https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/fallguys.jfif"
+                        alt="Fall Guys" loading="lazy">
+
+                    <div class="informacoes-jogo">
+                        <span class="genero-jogo">Party game</span>
+                        <h2>FALL GUYS</h2>
+                        <p>Supere obstáculos malucos e tente ser o último jogador na disputa.</p>
+                        <button class="btn-favorito" type="button" data-jogo="fall-guys">
                             Favoritar
                         </button>
                     </div>

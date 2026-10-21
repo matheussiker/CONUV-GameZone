@@ -4,30 +4,86 @@ const catalogoFavoritos = [
         nome: "GTA VI",
         genero: "Ação e mundo aberto",
         descricao: "Explore Vice City com Jason e Lucia em uma aventura de mundo aberto repleta de crimes, ação e perigos.",
-        imagem: "https://viciados.net/wp-content/uploads/2025/11/GTA-VI-Grand-Theft-Auto-6-Rockstar-Games-Jason-Lucia-Wallpaper-2026-797x448.webp"
+        imagem: "https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/gta6.jpg"
     },
     {
         id: "valorant",
         nome: "VALORANT",
         genero: "Tiro tático",
         descricao: "Forme sua equipe, escolha um agente com habilidades únicas e dispute partidas táticas de tiro.",
-        imagem: "https://m.media-amazon.com/images/M/MV5BZmQwMjQ2ZTUtZmM5MC00MTdkLWIxYzgtODU1NzQ4Zjg4NmMxXkEyXkFqcGc@._V1_.jpg"
+        imagem: "https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/valorant.jpg"
     },
     {
         id: "fortnite",
         nome: "FORTNITE",
         genero: "Battle Royale",
         descricao: "Caia na ilha, encontre equipamentos, enfrente outros jogadores e lute para ser o último sobrevivente.",
-        imagem: "https://m.media-amazon.com/images/M/MV5BOWJlODRkMDMtYjAxNy00NDEzLTk1MTctZmUyMjc2OTM0N2EwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+        imagem: "https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/fortinite.jpg"
     },
     {
         id: "forza-horizon-6",
         nome: "FORZA HORIZON 6",
         genero: "Corrida",
         descricao: "Explore cenários impressionantes, dirija carros incríveis e participe de corridas e desafios automobilísticos.",
-        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tabDHJ6jqEUUNy_Fo7VwoREbiiMvBc53QCFkuirrHg&s=10"
+        imagem: "https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/forzaHorizon6.jpg"
+    },   
+    {
+        id: "minecraft",
+        nome: "MINECRAFT",
+        genero: "Aventura e construção",
+        descricao: "Explore mundos, construa casas e sobreviva usando sua criatividade.",
+        imagem: "https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/minecraft.jfif"
+    },
+    {
+        id: "red-dead-2",
+        nome: "RED DEAD REDEMPTION 2",
+        genero: "Ação e mundo aberto",
+        descricao: "Viva uma aventura no Velho Oeste com Arthur Morgan.",
+        imagem: "https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/redDeadRedemption7.jfif"
+    },
+    {
+        id: "cyberpunk-2077",
+        nome: "CYBERPUNK 2077",
+        genero: "RPG e ação",
+        descricao: "Explore Night City em uma aventura futurista.",
+        imagem: "https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/cyberpunk2077.jfif"
+    },
+    {
+        id: "elden-ring",
+        nome: "ELDEN RING",
+        genero: "RPG e aventura",
+        descricao: "Explore um mundo de fantasia e enfrente inimigos desafiadores.",
+        imagem: "https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/ELDENRING.jfif"
+    },
+    {
+        id: "ea-sports-fc",
+        nome: "EA SPORTS FC",
+        genero: "Esportes e futebol",
+        descricao: "Monte seu time e dispute partidas de futebol.",
+        imagem: "https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/EA+SPORTSFC.jfif"
+    },
+    {
+        id: "call-of-duty",
+        nome: "CALL OF DUTY",
+        genero: "Tiro e ação",
+        descricao: "Participe de combates intensos em partidas de tiro.",
+        imagem: "https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/callofdutyblackops7.jfif"
+    },
+    {
+        id: "rocket-league",
+        nome: "ROCKET LEAGUE",
+        genero: "Carros e futebol",
+        descricao: "Controle carros turbinados e marque gols.",
+        imagem: "https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/ROCKETLEAGUE.jfif"
+    },
+    {
+        id: "fall-guys",
+        nome: "FALL GUYS",
+        genero: "Party game",
+        descricao: "Supere obstáculos e tente vencer os outros jogadores.",
+        imagem: "https://s3-gamezone-bucket-378040395811-us-east-2-an.s3.us-east-2.amazonaws.com/images/fallguys.jfif"
     }
-];
+    ];
 
 
 const listaFavoritos = document.querySelector("#lista-favoritos");
@@ -68,14 +124,6 @@ function renderizarFavoritos() {
                 <span class="genero-favorito">${jogo.genero}</span>
                 <h3>${jogo.nome}</h3>
                 <p>${jogo.descricao}</p>
-
-
-                <button
-                    class="btn-favorito favoritado"
-                    type="button"
-                    data-jogo="${jogo.id}">
-                    Remover dos favoritos
-                </button>
             </div>
         `;
 

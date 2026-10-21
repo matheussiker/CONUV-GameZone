@@ -34,9 +34,7 @@ document.addEventListener("click", event => {
     let favoritos = obterFavoritos();
 
     if (favoritos.includes(jogo)) {
-        favoritos = favoritos.filter(id =>{
-            id !== jogo
-        });
+        favoritos = favoritos.filter(id => id !== jogo);
     } else {
         favoritos.push(jogo);
     }
